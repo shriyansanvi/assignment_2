@@ -1,0 +1,237 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #ffe699;
+  padding: 1rem;
+}
+
+nav h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.category-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+.cake-image, .cart-item-image {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+/* src/components/CakeCard.css */
+.cake-card {
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  margin: 20px;
+}
+
+.cake-card:hover {
+  transform: translateY(-5px); /* Hover effect */
+}
+
+.cake-card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures the image covers the container */
+  border-bottom: 1px solid #eee;
+}
+
+.cake-card-body {
+  padding: 20px;
+}
+
+.cake-card-body h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.cake-card-body p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.cake-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e63946; /* Price color */
+  margin-bottom: 20px;
+}
+
+.cake-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cake-card-footer input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.cake-card-footer button {
+  background-color: #e63946;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cake-card-footer button:hover {
+  background-color: #d42c37;
+}
+/* src/components/CakeCard.css */
+.cake-card {
+  width: 300px;
+  height:  auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  margin: 10px;
+}
+
+.cake-card:hover {
+  transform: translateY(-5px); /* Hover effect */
+}
+
+.cake-card-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Ensures the image covers the container */
+  border-bottom: 1px solid #eee;
+}
+
+.cake-card-body {
+  padding: 20px;
+}
+
+.cake-card-body h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.cake-card-body p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.cake-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e63946; /* Price color */
+  margin-bottom: 20px;
+}
+
+.cake-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cake-card-footer input {
+  width: 50px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.cake-card-footer button {
+  background-color: #e63946;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cake-card-footer button:hover {
+  background-color: #d42c37;
+}
+
+/* Make the cake cards horizontal */
+.cake-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space between each card */
+}
+
+
+
+.categories {
+  margin-bottom: 20px;
+}
+
+.category-button {
+  padding: 10px 20px;
+  background-color: #e63946;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.category-button:hover {
+  background-color: #d42c37;
+}
+.remove{
+  background-color: #f44336; /* Red color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #d32f2f; /* Darker red on hover */
+  transform: scale(1.05);
+}
+
+
